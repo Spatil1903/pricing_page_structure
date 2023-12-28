@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pricingStyle.css">
+    <title>Pricing Table</title>
+</head>
+<body>
+    <div class="top-banner">
+        <p class="current-plan"> Your Current Plan</p>
+            <p class="plan-type">Starter Trial . 500MAUs</p>
+        
+    </div>
+
+    <div class="container">
+        <h1 class="title">Choose a Plan</h1>
+        <div class="toggle-switch">
+            <span>Billed anually</span>
+            <input type="checkbox" class="toggler">
+            <span> Billed monthly</span>
+        </div>
+        <div class="cards">
+            <div class="card" id="card-1">
+                <h1 class="card-title"> Starter </h1>
+                <h2 class="card-price" id="starter-price"> $19  <span> / month</span></h2>
+                <ul class="card-plan">
+                    <li>500MAUs</li>
+                    <li>3 projects</li>
+                    <li>Unlimited guids</li>
+                    <li>Unlimited flows</li>
+                    <li>Unlimited branded thems</li>
+                    <li>Email support</li>
+                </ul>
+              <button type="button" class="card-btn"> Choose Plan</button>
+            </div>
+
+
+            <div class="card active" id="card-2">
+                <h1 class="card-title"> Pro </h1>
+                <h2 class="card-price" id="pro-price">$99  <span> / month</span></h2>
+
+                <select  id="maus">
+                    <option value="500">500MAUS</option>
+                    <option value="100">1000MAUS</option>
+                    <option value="1500">1500MAUS</option>
+                    <option value="2000">2000MAUS</option>
+                    <option value="2500">2500MAUS</option>
+                </select>
+                 <span class="note"> Monthly active users </span>
+
+                <ul class="card-plan">
+                    <li> All starter featured ,plus: </li>
+                    <li> Unlimited  projects </li>
+                    <li> Unlimited  fully customizable thems </li>
+                    <li> A dedicated customer success manager </li>
+                    
+                </ul>
+              <button type="button" class="card-btn"> Choose Plan </button>
+            </div>
+
+
+            <div class="card" id="card-3">
+                <h1 class="card-title"> Enterprise </h1>
+                <h2 class="card-price" >  Let's Talk! </h2>
+                <ul class="card-plan">
+                    <li> All pro featured </li>
+                    <li> Unlimited MAUS </li>
+                    <li> Dedicated environment </li>
+                    <li> Enterprise account administration </li>
+                    <li> premium account and services </li>
+                </ul>
+              <button type="button" class="card-btn"> Contact Us </button>
+            </div>
+        </div>
+    </div>
+   <script src="pricingJs.js"></script> 
+</body>
+</html>
